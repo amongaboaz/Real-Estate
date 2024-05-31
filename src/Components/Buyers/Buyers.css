@@ -1,0 +1,61 @@
+.buyers {
+    background-color: #f8f8f8;
+    padding: 4rem 0;
+  }
+  
+  .buyers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .buyers h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .buyers p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .buyers-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info-item {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    gap: 3rem;
+  }
+  
+  .info-item i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .info-item p {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .buyers-info {
+      flex-direction: column;
+    }
+  
+    .info-item {
+      margin-bottom: 2rem;
+    }
+  }
+  

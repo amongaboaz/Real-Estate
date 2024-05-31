@@ -1,0 +1,123 @@
+.hero {
+  position: relative;
+  text-align: center;
+  color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9); /* Set card background color */
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 800px; /* Adjust the maximum width as needed */
+}
+
+.card-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-text {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.card-image {
+  flex: 1;
+  padding: 20px;
+  background: url('../Assets//background.jpg') center center/cover no-repeat; /* Set image as background */
+  position: relative;
+}
+
+.card-image::after {
+  content: ''; /* Create a pseudo-element */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Overlay to darken the image */
+}
+
+.card-image img {
+  visibility: hidden;
+   /* Hide the image element */
+}
+
+.card-text {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Optional: Increase the space occupied by the image */
+@media (min-width: 768px) {
+  .card-image {
+    padding: 40px; /* Increase padding */
+  }
+}
+
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: black;
+  background-color: rgb(11, 176, 11);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+  background-color: green;
+}
+
+.hero-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+/* Optional: Make the hero section responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+
+  .hero-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}
